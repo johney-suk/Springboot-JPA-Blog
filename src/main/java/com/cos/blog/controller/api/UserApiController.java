@@ -22,7 +22,7 @@ public class UserApiController {
 		System.out.println("UserApiController: save 호출됨.");
 		user.setRole(RoleType.USER);
 		userService.회원가입(user);
-		return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
+		return new ResponseDto <Integer>(HttpStatus.OK.value(), 1);
 	}
 
 	@PostMapping("/api/user/login")
